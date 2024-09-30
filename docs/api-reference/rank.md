@@ -51,25 +51,25 @@ To add a new command in your chatbot, use the following syntax:
 === "Nightbot"
 
     ```bash
-    !addcom !rank $(urlfetch https://valo-api.vercel.com/rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>)
+    !addcom !rank $(urlfetch https://valo-api.vercel.app/rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>)
     ```
 
 === "StreamElements"
 
     ```bash
-    !cmd add !rank $(customapi https://valo-api.vercel.com/rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>)
+    !cmd add !rank $(customapi https://valo-api.vercel.app/rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>)
     ```
 
 === "Fossabot"
 
     ```bash
-    !addcmd !rank $(customapi https://valo-api.vercel.com/rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>)
+    !addcmd !rank $(customapi https://valo-api.vercel.app/rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>)
     ```
 
 === "Streamlabs Chatbot"
 
     ```bash
-    !command add !rank {readapi.https://valo-api.vercel.com/rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>}
+    !command add !rank {readapi.https://valo-api.vercel.app/rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>}
     ```
 
 To edit an existing command, use the following syntax:
@@ -77,25 +77,25 @@ To edit an existing command, use the following syntax:
 === "Nightbot"
 
     ```bash
-    !editcom !rank $(urlfetch https://valo-api.vercel.com/rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>)
+    !editcom !rank $(urlfetch https://valo-api.vercel.app/rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>)
     ```
 
 === "StreamElements"
 
     ```bash
-    !cmd edit !rank $(customapi https://valo-api.vercel.com/rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>)
+    !cmd edit !rank $(customapi https://valo-api.vercel.app/rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>)
     ```
 
 === "Fossabot"
 
     ```bash
-    !editcmd !rank $(customapi https://valo-api.vercel.com/rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>)
+    !editcmd !rank $(customapi https://valo-api.vercel.app/rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>)
     ```
 
 === "Streamlabs Chatbot"
 
     ```bash
-    !command edit !rank {readapi.https://valo-api.vercel.com/rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>}
+    !command edit !rank {readapi.https://valo-api.vercel.app/rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>}
     ```
 
 ### Command Usage
@@ -189,19 +189,19 @@ To add a new command in your chatbot, use the following syntax:
 === "Nightbot"
 
     ```bash
-    !addcom !checkrank $(urlfetch https://valo-api.vercel.com/checkrank?q=$(querystring)&apiKey=<apiKey>)
+    !addcom !checkrank $(urlfetch https://valo-api.vercel.app/checkrank?q=$(querystring)&apiKey=<apiKey>)
     ```
 
 === "StreamElements"
 
     ```bash
-    !cmd add !checkrank $(customapi https://valo-api.vercel.com/checkrank?q=${1:}&apiKey=<apiKey>)
+    !cmd add !checkrank $(customapi https://valo-api.vercel.app/checkrank?q=${1:}&apiKey=<apiKey>)
     ```
 
 === "Fossabot"
 
     ```bash
-    !addcmd !checkrank $(customapi https://valo-api.vercel.com/checkrank?q=$(querystring)&apiKey=<apiKey>)
+    !addcmd !checkrank $(customapi https://valo-api.vercel.app/checkrank?q=$(querystring)&apiKey=<apiKey>)
     ```
 
 To edit an existing command, use the following syntax:
@@ -209,19 +209,19 @@ To edit an existing command, use the following syntax:
 === "Nightbot"
 
     ```bash
-    !editcom !checkrank $(urlfetch https://valo-api.vercel.com/checkrank?q=$(querystring)&apiKey=<apiKey>)
+    !editcom !checkrank $(urlfetch https://valo-api.vercel.app/checkrank?q=$(querystring)&apiKey=<apiKey>)
     ```
 
 === "StreamElements"
 
     ```bash
-    !cmd edit !checkrank $(customapi https://valo-api.vercel.com/checkrank?q=${1:}&apiKey=<apiKey>)
+    !cmd edit !checkrank $(customapi https://valo-api.vercel.app/checkrank?q=${1:}&apiKey=<apiKey>)
     ```
 
 === "Fossabot"
 
     ```bash
-    !editcmd !checkrank $(customapi https://valo-api.vercel.com/checkrank?q=$(querystring)&apiKey=<apiKey>)
+    !editcmd !checkrank $(customapi https://valo-api.vercel.app/checkrank?q=$(querystring)&apiKey=<apiKey>)
     ```
 
 ### Command Usage
@@ -301,25 +301,25 @@ To add a new command in your chatbot, use the following syntax:
 === "Nightbot"
 
     ```bash
-    !addcom !leaderboardrank $(urlfetch https://valo-api.vercel.com/leaderboard-rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>)
+    !addcom !leaderboardrank $(urlfetch https://valo-api.vercel.app/leaderboard-rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>)
     ```
 
 === "StreamElements"
 
     ```bash
-    !cmd add !leaderboardrank $(customapi https://valo-api.vercel.com/leaderboard-rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>)
+    !cmd add !leaderboardrank $(customapi https://valo-api.vercel.app/leaderboard-rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>)
     ```
 
 === "Fossabot"
 
     ```bash
-    !addcmd !leaderboardrank $(customapi https://valo-api.vercel.com/leaderboard-rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>)
+    !addcmd !leaderboardrank $(customapi https://valo-api.vercel.app/leaderboard-rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>)
     ```
 
 === "Streamlabs Chatbot"
 
     ```bash
-    !command add !leaderboardrank {readapi.https://valo-api.vercel.com/leaderboard-rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>}
+    !command add !leaderboardrank {readapi.https://valo-api.vercel.app/leaderboard-rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>}
     ```
 
 To edit an existing command, use the following syntax:
@@ -327,25 +327,25 @@ To edit an existing command, use the following syntax:
 === "Nightbot"
 
     ```bash
-    !editcom !leaderboardrank $(urlfetch https://valo-api.vercel.com/leaderboard-rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>)
+    !editcom !leaderboardrank $(urlfetch https://valo-api.vercel.app/leaderboard-rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>)
     ```
 
 === "StreamElements"
 
     ```bash
-    !cmd edit !leaderboardrank $(customapi https://valo-api.vercel.com/leaderboard-rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>)
+    !cmd edit !leaderboardrank $(customapi https://valo-api.vercel.app/leaderboard-rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>)
     ```
 
 === "Fossabot"
 
     ```bash
-    !editcmd !leaderboardrank $(customapi https://valo-api.vercel.com/leaderboard-rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>)
+    !editcmd !leaderboardrank $(customapi https://valo-api.vercel.app/leaderboard-rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>)
     ```
 
 === "Streamlabs Chatbot"
 
     ```bash
-    !command edit !leaderboardrank {readapi.https://valo-api.vercel.com/leaderboard-rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>}
+    !command edit !leaderboardrank {readapi.https://valo-api.vercel.app/leaderboard-rank?name=<username>&tag=<tag>&region=<region>&apiKey=<apiKey>}
     ```
 
 ### Command Usage
