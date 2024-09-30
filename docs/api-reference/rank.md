@@ -182,32 +182,26 @@ GET /checkrank?q=Player%20123 456 na&apiKey=your-api-key
 
 ### Command Setup
 
-Below are examples of how to use the `/checkrank` endpoint in a chatbot command. Replace `<q>` and `<apiKey>` with the appropriate values.
+Below are examples of how to use the `/checkrank` endpoint in a chatbot command. Replace `<apiKey>` with the appropriate values and `querystring` or `q` value is entered while running the command, see [usage](#command-usage_1)
 
 To add a new command in your chatbot, use the following syntax:
 
 === "Nightbot"
 
     ```bash
-    !addcom !checkrank $(urlfetch https://valo-api.vercel.com/checkrank?q=<q>&apiKey=<apiKey>)
+    !addcom !checkrank $(urlfetch https://valo-api.vercel.com/checkrank?q=$(querystring)&apiKey=<apiKey>)
     ```
 
 === "StreamElements"
 
     ```bash
-    !cmd add !checkrank $(customapi https://valo-api.vercel.com/checkrank?q=<q>&apiKey=<apiKey>)
+    !cmd add !checkrank $(customapi https://valo-api.vercel.com/checkrank?q=${1:}&apiKey=<apiKey>)
     ```
 
 === "Fossabot"
 
     ```bash
-    !addcmd !checkrank $(customapi https://valo-api.vercel.com/checkrank?q=<q>&apiKey=<apiKey>)
-    ```
-
-=== "Streamlabs Chatbot"
-
-    ```bash
-    !command add !checkrank {readapi.https://valo-api.vercel.com/checkrank?q=<q>&apiKey=<apiKey>}
+    !addcmd !checkrank $(customapi https://valo-api.vercel.com/checkrank?q=$(querystring)&apiKey=<apiKey>)
     ```
 
 To edit an existing command, use the following syntax:
@@ -215,25 +209,19 @@ To edit an existing command, use the following syntax:
 === "Nightbot"
 
     ```bash
-    !editcom !checkrank $(urlfetch https://valo-api.vercel.com/checkrank?q=<q>&apiKey=<apiKey>)
+    !editcom !checkrank $(urlfetch https://valo-api.vercel.com/checkrank?q=$(querystring)&apiKey=<apiKey>)
     ```
 
 === "StreamElements"
 
     ```bash
-    !cmd edit !checkrank $(customapi https://valo-api.vercel.com/checkrank?q=<q>&apiKey=<apiKey>)
+    !cmd edit !checkrank $(customapi https://valo-api.vercel.com/checkrank?q=${1:}&apiKey=<apiKey>)
     ```
 
 === "Fossabot"
 
     ```bash
-    !editcmd !checkrank $(customapi https://valo-api.vercel.com/checkrank?q=<q>&apiKey=<apiKey>)
-    ```
-
-=== "Streamlabs Chatbot"
-
-    ```bash
-    !command edit !checkrank {readapi.https://valo-api.vercel.com/checkrank?q=<q>&apiKey=<apiKey>}
+    !editcmd !checkrank $(customapi https://valo-api.vercel.com/checkrank?q=$(querystring)&apiKey=<apiKey>)
     ```
 
 ### Command Usage

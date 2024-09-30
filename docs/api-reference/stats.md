@@ -216,36 +216,26 @@ This `q` value will be split as:
 
 ### Command Setup
 
-Below are examples of how to use the `/checkstats` endpoint in a chatbot command. Replace `<q>` and `<apiKey>` with the appropriate values.
+Below are examples of how to use the `/checkstats` endpoint in a chatbot command. Replace `<apiKey>` with the appropriate value and `querystring` or `q` value is entered while calling the command, see [usage](#command-usage_1)
 
 To add a new command in your chatbot, use the following syntax:
 
 === "Nightbot"
 
     ```bash
-    !addcom !checkstats $(urlfetch https://valo-api.vercel.app/checkstats
-    ?q=<q>&apiKey=<apiKey>)
+    !addcom !checkstats $(urlfetch https://valo-api.vercel.app/checkstats?q=$(querystring)&apiKey=<apiKey>)
     ```
 
 === "StreamElements"
 
     ```bash
-    !cmd add !checkstats $(customapi https://valo-api.vercel.app/checkstats
-    ?q=<q>&apiKey=<apiKey>)
+    !cmd add !checkstats $(customapi https://valo-api.vercel.app/checkstats?q=${1:}&apiKey=<apiKey>)
     ```
 
 === "Fossabot"
 
     ```bash
-    !addcmd !checkstats $(customapi https://valo-api.vercel.app/checkstats
-    ?q=<q>&apiKey=<apiKey>)
-    ```
-
-=== "Streamlabs Chatbot"
-
-    ```bash
-    !command add !checkstats {readapi.https://valo-api.vercel.app/checkstats
-    ?q=<q>&apiKey=<apiKey>}
+    !addcmd !checkstats $(customapi https://valo-api.vercel.app/checkstats?q=$(querystring)&apiKey=<apiKey>)
     ```
 
 To edit an existing command, use the following syntax:
@@ -253,29 +243,19 @@ To edit an existing command, use the following syntax:
 === "Nightbot"
 
     ```bash
-    !editcom !checkstats $(urlfetch https://valo-api.vercel.app/checkstats
-    ?q=<q>&apiKey=<apiKey>)
+    !editcom !checkstats $(urlfetch https://valo-api.vercel.app/checkstats?q=$(querystring)&apiKey=<apiKey>)
     ```
 
 === "StreamElements"
 
     ```bash
-    !cmd edit !checkstats $(customapi https://valo-api.vercel.app/checkstats
-    ?q=<q>&apiKey=<apiKey>)
+    !cmd edit !checkstats $(customapi https://valo-api.vercel.app/checkstats?q=${1:}&apiKey=<apiKey>)
     ```
 
 === "Fossabot"
 
     ```bash
-    !editcmd !checkstats $(customapi https://valo-api.vercel.app/checkstats
-    ?q=<q>&apiKey=<apiKey>)
-    ```
-
-=== "Streamlabs Chatbot"
-
-    ```bash
-    !command edit !checkstats {readapi.https://valo-api.vercel.app/checkstats
-    ?q=<q>&apiKey=<apiKey>}
+    !editcmd !checkstats $(customapi https://valo-api.vercel.app/checkstats?q=$(querystring)&apiKey=<apiKey>)
     ```
 
 ### Command Usage
@@ -314,13 +294,12 @@ The `/party-members` endpoint is used to retrieve the party members of a specifi
 
 ### Request Parameters
 
-| Parameter | Type   | Description                                             | Example                                                 |
-| --------- | ------ | ------------------------------------------------------- | ------------------------------------------------------- |
-| username  | string | The Valorant player name to retrieve party members for. | `playername`                                            |
-| tag       | string | The Valorant player tag to retrieve party members for.  | `1234`                                                  |
-| region    | string | The region of the Valorant player.                      | `na`                                                    |
-| apiKey    | string | Your API key obtained from HenrikDev API.               | `HDEV-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`             |
-
+| Parameter | Type   | Description                                             | Example                                     |
+| --------- | ------ | ------------------------------------------------------- | ------------------------------------------- |
+| username  | string | The Valorant player name to retrieve party members for. | `playername`                                |
+| tag       | string | The Valorant player tag to retrieve party members for.  | `1234`                                      |
+| region    | string | The region of the Valorant player.                      | `na`                                        |
+| apiKey    | string | Your API key obtained from HenrikDev API.               | `HDEV-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx` |
 
 **_Note: `tag` should be provided without the `#` symbol at the start._**
 
