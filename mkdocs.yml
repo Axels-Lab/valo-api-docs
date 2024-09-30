@@ -16,8 +16,17 @@ plugins:
   - search
       
 extra:
-  generator: false
-      
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.com/users/363436497560666114
+      name: Axel on Discord (if you have a common server)
+    - icon: fontawesome/brands/twitch
+      link: https://twitch.tv/ssAxel_ 
+      name: Axel on Twitch
+    - icon: fontawesome/brands/steam
+      link: https://steamcommunity.com/profiles/76561199101032196/
+      name: Axel on Steam
+    
 theme:
   name: material
   favicon: assets/images/favicon.png
