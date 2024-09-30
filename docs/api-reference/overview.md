@@ -28,6 +28,6 @@ Each endpoint may require specific parameters. Refer to the endpoint documentati
 
 ## Response Formats
 
-Responses are typically in plain string format to be shown in twitch chat. Refer to the endpoint documentation for example responses.
+Responses are typically in plain string format to be shown in twitch chat. If you're encountering an issue with 401 Unauthorized, please refer to the [Authentication](../index.md/#authentication) section and make sure you're using a valid API key.
 
 For more detailed information, please refer to the specific endpoint documentation.
