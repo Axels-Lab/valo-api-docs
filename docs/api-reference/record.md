@@ -86,3 +86,19 @@ To edit an existing command, use the following syntax:
 
 - `!record` - Retrieves the user's Valorant MMR history during the current stream.
 - Replace `<username>`, `<tag>`, `<region>`, and `<your-api-key>` with the appropriate values.
+
+### Additional Notes
+
+- The API uses the HenrikDev API internally to fetch the player's match details.
+- Ensure that you have a valid API key to access the endpoints.
+- The API responses are in plain text format suitable for chatbot commands.
+- For detailed error handling and response formats, refer to the specific endpoint documentation.
+
+### External API Used
+
+- [https://api.henrikdev.xyz/valorant/v2/mmr-history](https://docs.henrikdev.xyz/valorant/api-reference/mmr-history#valorant-v2-mmr-history-region-platform-name-tag){target="_blank"} - HenrikDev API for fetching mmr-history details.
+
+### Limitations
+
+- The `!record` command assumes that every game with negative RR is a loss and any game with >7 RR is a win. Anything in between is considered a draw. While this works 98% of the time, this logic is still flawed and shall be improved in the future.
+- Additionally, it can only see 20 games worth of data at maximum.
