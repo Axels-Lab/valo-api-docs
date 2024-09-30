@@ -20,7 +20,7 @@ The Valo-API provides the following endpoints:
 - `/stats`
 - `/checkstats`
 - `/record`
-- `/party-members`
+- `/last-match/party-members`
 
 ## Request Parameters
 
