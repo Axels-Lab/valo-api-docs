@@ -29,7 +29,7 @@ The `/record` endpoint provides information about the user's Valorant MMR histor
 ### Example Request
 
 ```plaintext
-GET /record?channel=Streamer123&streamUptimeString=2h%2015m&streamStartDateString=2023-09-21T12:00:00Z&ign=PlayerName&tag=1234&region=na&apiKey=HDEV-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+GET /record?channel=Streamer123&streamUptimeString=2h%2015m&ign=PlayerName&tag=1234&region=na&apiKey=HDEV-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 ```
 
 ### Example Response
@@ -47,19 +47,19 @@ To add a new command in your chatbot, use the following syntax:
 === "Nightbot"
 
     ```plaintext
-    !addcom !record $(urlfetch https://valo-api.vercel.app/record?channel=$(channel)&streamUptimeString=$(twitch $(channel) "{{uptimeLength}}")&streamStartDateString=$(twitch $(channel) "{{uptimeAt}}")&ign=<username>&tag=<tag>&region=<region>&apiKey=<your-api-key>)
+    !addcom !record $(urlfetch https://valo-api.vercel.app/record?channel=$(channel)&streamUptimeString=$(twitch $(channel) "{{uptimeLength}}")&ign=<username>&tag=<tag>&region=<region>&apiKey=<your-api-key>)
     ```
 
 === "StreamElements"
 
     ```plaintext
-    !cmd add !record $(customapi https://valo-api.vercel.app/record?channel=${channel}&streamUptimeString=${uptime}&streamStartDateString=${createdAt}&ign=<username>&tag=<tag>&region=<region>&apiKey=<your-api-key>)
+    !cmd add !record $(customapi https://valo-api.vercel.app/record?channel=${channel}&streamUptimeString=${uptime}&ign=<username>&tag=<tag>&region=<region>&apiKey=<your-api-key>)
     ```
 
 === "Fossabot"
 
     ```plaintext
-    !addcmd !record $(customapi https://valo-api.vercel.app/record?channel=$(channel)&streamUptimeString=$(uptime)&streamStartDateString=$(createdAt)&ign=<username>&tag=<tag>&region=<region>&apiKey=<your-api-key>)
+    !addcmd !record $(customapi https://valo-api.vercel.app/record?channel=$(channel)&streamUptimeString=$(channel.uptime)&ign=<username>&tag=<tag>&region=<region>&apiKey=<your-api-key>)
     ```
 
 To edit an existing command, use the following syntax:
@@ -67,19 +67,19 @@ To edit an existing command, use the following syntax:
 === "Nightbot"
 
     ```plaintext
-    !editcom !record $(urlfetch https://valo-api.vercel.app/record?channel=$(channel)&streamUptimeString=$(twitch $(channel) "{{uptimeLength}}")&streamStartDateString=$(twitch $(channel) "{{uptimeAt}}")&ign=<username>&tag=<tag>&region=<region>&apiKey=<your-api-key>)
+    !editcom !record $(urlfetch https://valo-api.vercel.app/record?channel=$(channel)&streamUptimeString=$(twitch $(channel) "{{uptimeLength}}")&ign=<username>&tag=<tag>&region=<region>&apiKey=<your-api-key>)
     ```
 
 === "StreamElements"
 
     ```plaintext
-    !cmd edit !record $(customapi https://valo-api.vercel.app/record?channel=${channel}&streamUptimeString=${uptime}&streamStartDateString=${createdAt}&ign=<username>&tag=<tag>&region=<region>&apiKey=<your-api-key>)
+    !cmd edit !record $(customapi https://valo-api.vercel.app/record?channel=${channel}&streamUptimeString=${uptime}&ign=<username>&tag=<tag>&region=<region>&apiKey=<your-api-key>)
     ```
 
 === "Fossabot"
 
     ```plaintext
-    !editcmd !record $(customapi https://valo-api.vercel.app/record?channel=$(channel)&streamUptimeString=$(uptime)&streamStartDateString=$(createdAt)&ign=<username>&tag=<tag>&region=<region>&apiKey=<your-api-key>)
+    !editcmd !record $(customapi https://valo-api.vercel.app/record?channel=$(channel)&streamUptimeString=$(channel.uptime)&ign=<username>&tag=<tag>&region=<region>&apiKey=<your-api-key>)
     ```
 
 ### Command Usage
@@ -96,7 +96,7 @@ To edit an existing command, use the following syntax:
 
 ### External API Used
 
-- [https://api.henrikdev.xyz/valorant/v2/mmr-history](https://docs.henrikdev.xyz/valorant/api-reference/mmr-history#valorant-v2-mmr-history-region-platform-name-tag){target="_blank"} - HenrikDev API for fetching mmr-history details.
+- [https://api.henrikdev.xyz/valorant/v2/mmr-history](https://docs.henrikdev.xyz/valorant/api-reference/mmr-history#valorant-v2-mmr-history-region-platform-name-tag){target="\_blank"} - HenrikDev API for fetching mmr-history details.
 
 ### Limitations
 
