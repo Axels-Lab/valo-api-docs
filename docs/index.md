@@ -13,6 +13,7 @@ As we are using HenrikDev API, you'll need your own API key to use this project.
 
 ## Features
 
+- Overlay for displaying player rank and record
 - Retrieve player statistics (rank, leaderboard-rank and stats)
 - Access match history (record and last-party-members)
 
