@@ -19,4 +19,4 @@ As we are using HenrikDev API, you'll need your own API key to use this project.
 
 ## Usage
 
-This API is best used in twitch bots, discord bots, or any other application that requires access to Valorant match data. You can use this API to retrieve player statistics, match history, and more.
+To use the Valo-API, you can access the various endpoints provided in the documentation. The endpoints are designed to be used in chatbot commands, overlays, or other applications to display Valorant-related data.
