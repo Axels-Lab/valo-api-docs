@@ -94,7 +94,9 @@ nav:
   - Home: index.md
   - API Reference:
     - Overview: api-reference/overview.md
-    - Endpoints:
+    - Command Endpoints:
       - Rank Related: api-reference/rank.md
       - Stats Related: api-reference/stats.md
       - Record Related: api-reference/record.md
+    - Overlay Endpoints:
+      - Rank-Record Overlay: overlay-reference/rank-record.md
