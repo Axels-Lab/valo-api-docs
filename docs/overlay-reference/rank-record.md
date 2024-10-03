@@ -33,7 +33,7 @@ GET /overlays/rank-record?channel=Streamer123&name=PlayerName&tag=1234&region=na
 ### Example Responses
 
 - When the player's rank and record are available:
-    
+
 ![overlay-example1](../assets/images/rank-record-overlay-example1.png)
 
 - When the player's rank and record are not available:
@@ -58,5 +58,5 @@ To add the Rank-Record overlay to your stream, follow these steps:
 
 - The Rank-Record overlay is designed to display the player's current rank and MMR history during the stream. It calculates wins, losses, draws, and RR (Rank Rating) changes based on the stream's start time.
 - If the player's rank or record is not available, the overlay will display a message indicating that the data is not available.
-- If the player's rr change is negative, it will be displayed in red to indicate a decrease in RR. Similarly, if the rr change is positive, it will be displayed in green to indicate an increase in RR.
-- The overlay is updated in real-time as the stream progresses, providing viewers with up-to-date information on the player's rank and performance.
+- If the player's rr change is negative, it will be displayed in <span style= "color:tomato">red</span> to indicate a decrease in RR. Similarly, if the rr change is positive, it will be displayed in <span style="color:lightgreen">green</span> to indicate an increase in RR.
+- The overlay is updated in real-time as the stream progresses, providing viewers with up-to-date information on the player's rank and performance. It may take a minute or two for the overlay to reflect changes after a match has ended.
