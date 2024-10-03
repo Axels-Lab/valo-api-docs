@@ -1,0 +1,1901 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../overview/">
+      
+      
+        <link rel="next" href="../stats/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+    
+    
+      
+        <title>Rank Related - Valo-Api Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-HWHR8X3PZN"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-HWHR8X3PZN",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-HWHR8X3PZN",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>if("undefined"!=typeof __md_analytics){var consent=__md_get("__consent");consent&&consent.analytics&&__md_analytics()}</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#rank-related-api-endpoints" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Valo-Api Docs" class="md-header__button md-logo" aria-label="Valo-Api Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Valo-Api Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Rank Related
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../overview/" class="md-tabs__link">
+          
+  
+  API Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Valo-Api Docs" class="md-nav__button md-logo" aria-label="Valo-Api Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Valo-Api Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    API Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            API Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Command Endpoints
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Command Endpoints
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Rank Related
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Rank Related
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#rank-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      /rank Endpoint
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="/rank Endpoint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTTP Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Endpoint
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command Usage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkrank-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      /checkrank Endpoint
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="/checkrank Endpoint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#description_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http-method_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTTP Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Endpoint
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-parameters_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Parameters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Request Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#q-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      q Format
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-q-parameter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example q Parameter
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Request
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Handling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-setup_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-usage_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command Usage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#leaderboard-rank-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      /leaderboard-rank Endpoint
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="/leaderboard-rank Endpoint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#description_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http-method_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTTP Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Endpoint
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-parameters_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Parameters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Request Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-request_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Request
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-setup_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-usage_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command Usage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Notes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#external-api-used" class="md-nav__link">
+    <span class="md-ellipsis">
+      External API Used
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stats/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stats Related
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../record/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Record Related
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Overlay Endpoints
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Overlay Endpoints
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overlay-reference/rank-record/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rank-Record Overlay
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#rank-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      /rank Endpoint
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="/rank Endpoint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTTP Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Endpoint
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command Usage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkrank-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      /checkrank Endpoint
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="/checkrank Endpoint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#description_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http-method_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTTP Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Endpoint
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-parameters_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Parameters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Request Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#q-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      q Format
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-q-parameter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example q Parameter
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Request
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Handling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-setup_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-usage_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command Usage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#leaderboard-rank-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      /leaderboard-rank Endpoint
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="/leaderboard-rank Endpoint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#description_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http-method_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTTP Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Endpoint
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-parameters_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Parameters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Request Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-request_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Request
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-setup_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-usage_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command Usage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Notes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#external-api-used" class="md-nav__link">
+    <span class="md-ellipsis">
+      External API Used
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="rank-related-api-endpoints">Rank Related API Endpoints</h1>
+<p>This section provides detailed information about the <code>/rank</code>, <code>/checkrank</code> and <code>leaderboard-rank</code> endpoints, which are used to retrieve the current rank, ranking points and leaderboard rank (if applicable) of a specified Valorant player.</p>
+<h2 id="rank-endpoint"><code>/rank</code> Endpoint</h2>
+<h3 id="description">Description</h3>
+<p>The <code>/rank</code> endpoint provides the current rank and ranking points of a specified Valorant player. The API fetches the player's rank and tier details based on their username, tag, and region.</p>
+<h3 id="http-method">HTTP Method</h3>
+<p><code>GET</code></p>
+<h3 id="endpoint">Endpoint</h3>
+<p><code>/rank</code></p>
+<h3 id="request-parameters">Request Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>name</code></td>
+<td>string</td>
+<td>The Valorant username of the player</td>
+<td><code>PlayerName</code></td>
+</tr>
+<tr>
+<td><code>tag</code></td>
+<td>string</td>
+<td>The Valorant tag of the player</td>
+<td><code>1234</code></td>
+</tr>
+<tr>
+<td><code>region</code></td>
+<td>string</td>
+<td>The region of the player (e.g., <code>na</code>, <code>eu</code>, <code>ap</code>)</td>
+<td><code>na</code></td>
+</tr>
+<tr>
+<td><code>apiKey</code></td>
+<td>string</td>
+<td>Your API key obtained from HenrikDev API</td>
+<td><code>HDEV-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="response">Response</h3>
+<ul>
+<li>
+<p><strong>200 OK</strong><br />
+  Returns a plain text summary of the player's current rank and ranking points.</p>
+<p><strong>Example Success Response:</strong> <code>Current Rank: Immortal1 - 45 RR.</code></p>
+</li>
+<li>
+<p><strong>400 Bad Request</strong><br />
+  Returns a plain text error message if required parameters (<code>name</code>, <code>tag</code>, <code>region</code>) are missing.</p>
+<p><strong>Example Error Response:</strong>
+  <code>Error: Missing parameters. Ensure username, tag, and region are provided.</code></p>
+</li>
+<li>
+<p><strong>500 Internal Server Error</strong><br />
+  Returns a plain text error message if an error occurs while fetching data from the external API (e.g., invalid credentials, player not found, etc.).
+  <strong>Example Error Response:</strong> <code>Error Message from API</code></p>
+</li>
+</ul>
+<h3 id="command-setup">Command Setup</h3>
+<p>Below are examples of how to use the <code>/rank</code> endpoint in a chatbot command. Replace <code>&lt;username&gt;</code>, <code>&lt;tag&gt;</code>, <code>&lt;region&gt;</code>, and <code>&lt;apiKey&gt;</code> with the appropriate values.</p>
+<p>To add a new command in your chatbot, use the following syntax:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Nightbot</label><label for="__tabbed_1_2">StreamElements</label><label for="__tabbed_1_3">Fossabot</label><label for="__tabbed_1_4">Streamlabs Chatbot</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>!addcom<span class="w"> </span>!rank<span class="w"> </span><span class="k">$(</span>urlfetch<span class="w"> </span>https://valo-api.vercel.app/rank?name<span class="o">=</span>&lt;username&gt;<span class="p">&amp;</span><span class="nv">tag</span><span class="o">=</span>&lt;tag&gt;<span class="p">&amp;</span><span class="nv">region</span><span class="o">=</span>&lt;region&gt;<span class="p">&amp;</span><span class="nv">apiKey</span><span class="o">=</span>&lt;apiKey&gt;<span class="k">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>!cmd<span class="w"> </span>add<span class="w"> </span>!rank<span class="w"> </span><span class="k">$(</span>customapi<span class="w"> </span>https://valo-api.vercel.app/rank?name<span class="o">=</span>&lt;username&gt;<span class="p">&amp;</span><span class="nv">tag</span><span class="o">=</span>&lt;tag&gt;<span class="p">&amp;</span><span class="nv">region</span><span class="o">=</span>&lt;region&gt;<span class="p">&amp;</span><span class="nv">apiKey</span><span class="o">=</span>&lt;apiKey&gt;<span class="k">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>!addcmd<span class="w"> </span>!rank<span class="w"> </span><span class="k">$(</span>customapi<span class="w"> </span>https://valo-api.vercel.app/rank?name<span class="o">=</span>&lt;username&gt;<span class="p">&amp;</span><span class="nv">tag</span><span class="o">=</span>&lt;tag&gt;<span class="p">&amp;</span><span class="nv">region</span><span class="o">=</span>&lt;region&gt;<span class="p">&amp;</span><span class="nv">apiKey</span><span class="o">=</span>&lt;apiKey&gt;<span class="k">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>!command<span class="w"> </span>add<span class="w"> </span>!rank<span class="w"> </span><span class="o">{</span>readapi.https://valo-api.vercel.app/rank?name<span class="o">=</span>&lt;username&gt;<span class="p">&amp;</span><span class="nv">tag</span><span class="o">=</span>&lt;tag&gt;<span class="p">&amp;</span><span class="nv">region</span><span class="o">=</span>&lt;region&gt;<span class="p">&amp;</span><span class="nv">apiKey</span><span class="o">=</span>&lt;apiKey&gt;<span class="o">}</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<p>To edit an existing command, use the following syntax:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Nightbot</label><label for="__tabbed_2_2">StreamElements</label><label for="__tabbed_2_3">Fossabot</label><label for="__tabbed_2_4">Streamlabs Chatbot</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>!editcom<span class="w"> </span>!rank<span class="w"> </span><span class="k">$(</span>urlfetch<span class="w"> </span>https://valo-api.vercel.app/rank?name<span class="o">=</span>&lt;username&gt;<span class="p">&amp;</span><span class="nv">tag</span><span class="o">=</span>&lt;tag&gt;<span class="p">&amp;</span><span class="nv">region</span><span class="o">=</span>&lt;region&gt;<span class="p">&amp;</span><span class="nv">apiKey</span><span class="o">=</span>&lt;apiKey&gt;<span class="k">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>!cmd<span class="w"> </span>edit<span class="w"> </span>!rank<span class="w"> </span><span class="k">$(</span>customapi<span class="w"> </span>https://valo-api.vercel.app/rank?name<span class="o">=</span>&lt;username&gt;<span class="p">&amp;</span><span class="nv">tag</span><span class="o">=</span>&lt;tag&gt;<span class="p">&amp;</span><span class="nv">region</span><span class="o">=</span>&lt;region&gt;<span class="p">&amp;</span><span class="nv">apiKey</span><span class="o">=</span>&lt;apiKey&gt;<span class="k">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>!editcmd<span class="w"> </span>!rank<span class="w"> </span><span class="k">$(</span>customapi<span class="w"> </span>https://valo-api.vercel.app/rank?name<span class="o">=</span>&lt;username&gt;<span class="p">&amp;</span><span class="nv">tag</span><span class="o">=</span>&lt;tag&gt;<span class="p">&amp;</span><span class="nv">region</span><span class="o">=</span>&lt;region&gt;<span class="p">&amp;</span><span class="nv">apiKey</span><span class="o">=</span>&lt;apiKey&gt;<span class="k">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>!command<span class="w"> </span>edit<span class="w"> </span>!rank<span class="w"> </span><span class="o">{</span>readapi.https://valo-api.vercel.app/rank?name<span class="o">=</span>&lt;username&gt;<span class="p">&amp;</span><span class="nv">tag</span><span class="o">=</span>&lt;tag&gt;<span class="p">&amp;</span><span class="nv">region</span><span class="o">=</span>&lt;region&gt;<span class="p">&amp;</span><span class="nv">apiKey</span><span class="o">=</span>&lt;apiKey&gt;<span class="o">}</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="command-usage">Command Usage</h3>
+<p>To use the <code>!rank</code> command in your chatbot for the configured user, you can type the following command in your chat:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>!rank
+</span></code></pre></div>
+<hr />
+<h2 id="checkrank-endpoint"><code>/checkrank</code> Endpoint</h2>
+<h3 id="description_1">Description</h3>
+<p>The <code>/checkrank</code> endpoint provides the current and peak rank of a specified Valorant player. This API extracts details based on a single query parameter (<code>q</code>) containing the player's username, tag, and region.</p>
+<h3 id="http-method_1">HTTP Method</h3>
+<p><code>GET</code></p>
+<h3 id="endpoint_1">Endpoint</h3>
+<p><code>/checkrank</code></p>
+<h3 id="request-parameters_1">Request Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>q</code></td>
+<td>string</td>
+<td>A single string that contains the player's username, tag, and region, separated by spaces. The tag can be with or without <code>#</code> symbol at the start.</td>
+<td><code>PlayerName 1234 na</code></td>
+</tr>
+<tr>
+<td><code>apiKey</code></td>
+<td>string</td>
+<td>Your API key obtained from HenrikDev API.</td>
+<td><code>HDEV-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="q-format"><code>q</code> Format</h4>
+<ul>
+<li>The <code>q</code> query parameter should contain <strong>three</strong> components:</li>
+<li><strong>Username:</strong> The player's in-game username (can contain spaces).</li>
+<li><strong>Tag:</strong> The player's tag (usually a 4-5 digit number or text, without <code>#</code>).</li>
+<li><strong>Region:</strong> The player's region (e.g., <code>na</code>, <code>eu</code>).</li>
+</ul>
+<h4 id="example-q-parameter">Example <code>q</code> Parameter</h4>
+<div class="language-http highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="err">GET /checkrank?q=PlayerName 1234 na&amp;apiKey=HDEV-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</span>
+</span></code></pre></div>
+<p>This <code>q</code> value will be split as:</p>
+<ul>
+<li><strong>Username:</strong> PlayerName</li>
+<li><strong>Tag:</strong> 1234</li>
+<li><strong>Region:</strong> na</li>
+</ul>
+<h3 id="response_1">Response</h3>
+<ul>
+<li><strong>200 OK</strong><br />
+  Returns a plain text summary of the player's current and peak rank.</li>
+</ul>
+<p><strong>Example Success Response:</strong>
+  Current Rank: Platinum2 - 0 RR. Peak Rank: Platinum3 in e8a3 (Peak might be incorrect)</p>
+<ul>
+<li>
+<p><strong>400 Bad Request</strong><br />
+  Returns a plain text error message if the required parameters (<code>username</code>, <code>tag</code>, and <code>region</code>) are missing or invalid.</p>
+<p><strong>Example Error Response:</strong>
+  Error: Missing or invalid parameters. Ensure username, tag, and region are provided.</p>
+</li>
+<li>
+<p><strong>500 Internal Server Error</strong><br />
+  Returns a plain text error message if there is an issue with fetching the data from the external API or any other error occurs.</p>
+<p><strong>Example Error Response:</strong>
+  Error occurred: <Error Message></p>
+</li>
+</ul>
+<h3 id="example-request">Example Request</h3>
+<div class="language-http highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="err">GET /checkrank?q=Player%20123 456 na&amp;apiKey=your-api-key</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="err">**Example Successful Response**: Current Rank: Immortal1 - 45 RR. Peak Rank: Immortal3 in Episode 6 (Peak might be incorrect)</span>
+</span></code></pre></div>
+<h3 id="error-handling">Error Handling</h3>
+<ul>
+<li>If the <code>q</code> parameter is missing, empty, or invalid, the API returns an error message asking for the proper input format.</li>
+<li>If an error occurs while calling the external API, the response returns the error message from the external API.</li>
+</ul>
+<h3 id="command-setup_1">Command Setup</h3>
+<p>Below are examples of how to use the <code>/checkrank</code> endpoint in a chatbot command. Replace <code>&lt;apiKey&gt;</code> with the appropriate values and <code>querystring</code> or <code>q</code> value is entered while running the command, see <a href="#command-usage_1">usage</a></p>
+<p>To add a new command in your chatbot, use the following syntax:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Nightbot</label><label for="__tabbed_3_2">StreamElements</label><label for="__tabbed_3_3">Fossabot</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>!addcom<span class="w"> </span>!checkrank<span class="w"> </span><span class="k">$(</span>urlfetch<span class="w"> </span>https://valo-api.vercel.app/checkrank?q<span class="o">=</span><span class="k">$(</span>querystring<span class="k">)</span><span class="p">&amp;</span><span class="nv">apiKey</span><span class="o">=</span>&lt;apiKey&gt;<span class="k">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>!cmd<span class="w"> </span>add<span class="w"> </span>!checkrank<span class="w"> </span><span class="k">$(</span>customapi<span class="w"> </span>https://valo-api.vercel.app/checkrank?q<span class="o">=</span><span class="si">${</span><span class="nv">1</span><span class="p">:</span><span class="si">}</span><span class="p">&amp;</span><span class="nv">apiKey</span><span class="o">=</span>&lt;apiKey&gt;<span class="k">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>!addcmd<span class="w"> </span>!checkrank<span class="w"> </span><span class="k">$(</span>customapi<span class="w"> </span>https://valo-api.vercel.app/checkrank?q<span class="o">=</span><span class="k">$(</span>querystring<span class="k">)</span><span class="p">&amp;</span><span class="nv">apiKey</span><span class="o">=</span>&lt;apiKey&gt;<span class="k">)</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<p>To edit an existing command, use the following syntax:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Nightbot</label><label for="__tabbed_4_2">StreamElements</label><label for="__tabbed_4_3">Fossabot</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>!editcom<span class="w"> </span>!checkrank<span class="w"> </span><span class="k">$(</span>urlfetch<span class="w"> </span>https://valo-api.vercel.app/checkrank?q<span class="o">=</span><span class="k">$(</span>querystring<span class="k">)</span><span class="p">&amp;</span><span class="nv">apiKey</span><span class="o">=</span>&lt;apiKey&gt;<span class="k">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>!cmd<span class="w"> </span>edit<span class="w"> </span>!checkrank<span class="w"> </span><span class="k">$(</span>customapi<span class="w"> </span>https://valo-api.vercel.app/checkrank?q<span class="o">=</span><span class="si">${</span><span class="nv">1</span><span class="p">:</span><span class="si">}</span><span class="p">&amp;</span><span class="nv">apiKey</span><span class="o">=</span>&lt;apiKey&gt;<span class="k">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>!editcmd<span class="w"> </span>!checkrank<span class="w"> </span><span class="k">$(</span>customapi<span class="w"> </span>https://valo-api.vercel.app/checkrank?q<span class="o">=</span><span class="k">$(</span>querystring<span class="k">)</span><span class="p">&amp;</span><span class="nv">apiKey</span><span class="o">=</span>&lt;apiKey&gt;<span class="k">)</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="command-usage_1">Command Usage</h3>
+<p>To use the <code>!checkrank</code> command in your chatbot, you can type the following command in your chat:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>!checkrank<span class="w"> </span>&lt;username&gt;<span class="w"> </span>&lt;tag&gt;<span class="w"> </span>&lt;region&gt;
+</span></code></pre></div>
+<p>For example:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>!checkrank PlayerName 1234 na
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>!checkrank PlayerName #1234 na
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>// Example for a username with spaces
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>!checkrank Player Name 1234 eu
+</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>!checkrank Player Name #1234 eu
+</span></code></pre></div>
+<hr />
+<h2 id="leaderboard-rank-endpoint"><code>/leaderboard-rank</code> Endpoint</h2>
+<h3 id="description_2">Description</h3>
+<p>The <code>/leaderboard-rank</code> endpoint retrieves both the current rank and leaderboard position of a specified Valorant player. It provides information on the player's rank, ranking in tier, leaderboard rank, and win rate for the current season.</p>
+<h3 id="http-method_2">HTTP Method</h3>
+<p><code>GET</code></p>
+<h3 id="endpoint_2">Endpoint</h3>
+<p><code>/leaderboard-rank</code></p>
+<h3 id="request-parameters_2">Request Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>name</code></td>
+<td>string</td>
+<td>The Valorant username of the player</td>
+<td><code>PlayerName</code></td>
+</tr>
+<tr>
+<td><code>tag</code></td>
+<td>string</td>
+<td>The Valorant tag of the player</td>
+<td><code>1234</code></td>
+</tr>
+<tr>
+<td><code>region</code></td>
+<td>string</td>
+<td>The region of the player (e.g., <code>na</code>, <code>eu</code>, <code>ap</code>)</td>
+<td><code>na</code></td>
+</tr>
+<tr>
+<td><code>apiKey</code></td>
+<td>string</td>
+<td>Your API key obtained from HenrikDev API</td>
+<td><code>HDEV-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="example-request_1">Example Request</h4>
+<div class="language-http highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="err">GET /leaderboard-rank?name=PlayerName&amp;tag=1234&amp;region=na&amp;apiKey=HDEV-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</span>
+</span></code></pre></div>
+<h3 id="response_2">Response</h3>
+<ul>
+<li><strong>200 OK</strong><br />
+  Returns a plain text summary of the player's current rank, leaderboard rank, and win rate.</li>
+</ul>
+<p><strong>Example Success Response:</strong>
+  Current Rank: Immortal3 - 392 RR | Leaderboard Rank: 502 with 71 wins out of 151 games (47.02% wr)</p>
+<ul>
+<li>
+<p><strong>400 Bad Request</strong>
+  Returns a plain text error message if required parameters (<code>name</code>, <code>tag</code>, <code>region</code>) are missing.</p>
+<div class="language-text highlight"><pre><span></span><code>**Example Error Response:**
+`Error: Missing parameters. Ensure username, tag, and region are provided.`
+</code></pre></div>
+</li>
+<li>
+<p><strong>500 Internal Server Error</strong><br />
+   Returns a plain text error message if an error occurs while fetching data from the external API (e.g., invalid credentials, player not found, etc.).
+  <strong>Example Error Response:</strong>
+  <code>Error Message from API</code></p>
+</li>
+</ul>
+<h3 id="command-setup_2">Command Setup</h3>
+<p>Below are examples of how to use the <code>/leaderboard-rank</code> endpoint in a chatbot command. Replace <code>&lt;username&gt;</code>, <code>&lt;tag&gt;</code>, <code>&lt;region&gt;</code>, and <code>&lt;apiKey&gt;</code> with the appropriate values. This command is best used for players ranked in the Immortal and Radiant tiers.</p>
+<p>To add a new command in your chatbot, use the following syntax:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:4"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><input id="__tabbed_5_4" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Nightbot</label><label for="__tabbed_5_2">StreamElements</label><label for="__tabbed_5_3">Fossabot</label><label for="__tabbed_5_4">Streamlabs Chatbot</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>!addcom<span class="w"> </span>!leaderboardrank<span class="w"> </span><span class="k">$(</span>urlfetch<span class="w"> </span>https://valo-api.vercel.app/leaderboard-rank?name<span class="o">=</span>&lt;username&gt;<span class="p">&amp;</span><span class="nv">tag</span><span class="o">=</span>&lt;tag&gt;<span class="p">&amp;</span><span class="nv">region</span><span class="o">=</span>&lt;region&gt;<span class="p">&amp;</span><span class="nv">apiKey</span><span class="o">=</span>&lt;apiKey&gt;<span class="k">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>!cmd<span class="w"> </span>add<span class="w"> </span>!leaderboardrank<span class="w"> </span><span class="k">$(</span>customapi<span class="w"> </span>https://valo-api.vercel.app/leaderboard-rank?name<span class="o">=</span>&lt;username&gt;<span class="p">&amp;</span><span class="nv">tag</span><span class="o">=</span>&lt;tag&gt;<span class="p">&amp;</span><span class="nv">region</span><span class="o">=</span>&lt;region&gt;<span class="p">&amp;</span><span class="nv">apiKey</span><span class="o">=</span>&lt;apiKey&gt;<span class="k">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>!addcmd<span class="w"> </span>!leaderboardrank<span class="w"> </span><span class="k">$(</span>customapi<span class="w"> </span>https://valo-api.vercel.app/leaderboard-rank?name<span class="o">=</span>&lt;username&gt;<span class="p">&amp;</span><span class="nv">tag</span><span class="o">=</span>&lt;tag&gt;<span class="p">&amp;</span><span class="nv">region</span><span class="o">=</span>&lt;region&gt;<span class="p">&amp;</span><span class="nv">apiKey</span><span class="o">=</span>&lt;apiKey&gt;<span class="k">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>!command<span class="w"> </span>add<span class="w"> </span>!leaderboardrank<span class="w"> </span><span class="o">{</span>readapi.https://valo-api.vercel.app/leaderboard-rank?name<span class="o">=</span>&lt;username&gt;<span class="p">&amp;</span><span class="nv">tag</span><span class="o">=</span>&lt;tag&gt;<span class="p">&amp;</span><span class="nv">region</span><span class="o">=</span>&lt;region&gt;<span class="p">&amp;</span><span class="nv">apiKey</span><span class="o">=</span>&lt;apiKey&gt;<span class="o">}</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<p>To edit an existing command, use the following syntax:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:4"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><input id="__tabbed_6_3" name="__tabbed_6" type="radio" /><input id="__tabbed_6_4" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">Nightbot</label><label for="__tabbed_6_2">StreamElements</label><label for="__tabbed_6_3">Fossabot</label><label for="__tabbed_6_4">Streamlabs Chatbot</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>!editcom<span class="w"> </span>!leaderboardrank<span class="w"> </span><span class="k">$(</span>urlfetch<span class="w"> </span>https://valo-api.vercel.app/leaderboard-rank?name<span class="o">=</span>&lt;username&gt;<span class="p">&amp;</span><span class="nv">tag</span><span class="o">=</span>&lt;tag&gt;<span class="p">&amp;</span><span class="nv">region</span><span class="o">=</span>&lt;region&gt;<span class="p">&amp;</span><span class="nv">apiKey</span><span class="o">=</span>&lt;apiKey&gt;<span class="k">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>!cmd<span class="w"> </span>edit<span class="w"> </span>!leaderboardrank<span class="w"> </span><span class="k">$(</span>customapi<span class="w"> </span>https://valo-api.vercel.app/leaderboard-rank?name<span class="o">=</span>&lt;username&gt;<span class="p">&amp;</span><span class="nv">tag</span><span class="o">=</span>&lt;tag&gt;<span class="p">&amp;</span><span class="nv">region</span><span class="o">=</span>&lt;region&gt;<span class="p">&amp;</span><span class="nv">apiKey</span><span class="o">=</span>&lt;apiKey&gt;<span class="k">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>!editcmd<span class="w"> </span>!leaderboardrank<span class="w"> </span><span class="k">$(</span>customapi<span class="w"> </span>https://valo-api.vercel.app/leaderboard-rank?name<span class="o">=</span>&lt;username&gt;<span class="p">&amp;</span><span class="nv">tag</span><span class="o">=</span>&lt;tag&gt;<span class="p">&amp;</span><span class="nv">region</span><span class="o">=</span>&lt;region&gt;<span class="p">&amp;</span><span class="nv">apiKey</span><span class="o">=</span>&lt;apiKey&gt;<span class="k">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>!command<span class="w"> </span>edit<span class="w"> </span>!leaderboardrank<span class="w"> </span><span class="o">{</span>readapi.https://valo-api.vercel.app/leaderboard-rank?name<span class="o">=</span>&lt;username&gt;<span class="p">&amp;</span><span class="nv">tag</span><span class="o">=</span>&lt;tag&gt;<span class="p">&amp;</span><span class="nv">region</span><span class="o">=</span>&lt;region&gt;<span class="p">&amp;</span><span class="nv">apiKey</span><span class="o">=</span>&lt;apiKey&gt;<span class="o">}</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="command-usage_2">Command Usage</h3>
+<p>To use the <code>!leaderboardrank</code> command in your chatbot for the configured user, you can type the following command in your chat:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>!leaderboardrank
+</span></code></pre></div>
+<hr />
+<h2 id="additional-notes">Additional Notes</h2>
+<ul>
+<li>The API uses the HenrikDev API internally to fetch the player's rank and leaderboard details.</li>
+<li>Ensure that you have a valid API key to access the endpoints.</li>
+<li>The API responses are in plain text format suitable for chatbot commands.</li>
+<li>The API may return error messages if the required parameters are missing or if there are issues with the external API.</li>
+<li>For detailed error handling and response formats, refer to the specific endpoint documentation.</li>
+</ul>
+<h2 id="external-api-used">External API Used</h2>
+<ul>
+<li><a href="https://docs.henrikdev.xyz/valorant/api-reference/mmr#valorant-v2-mmr-region-name-tag" target="_blank"><code>https://api.henrikdev.xyz/valorant/v2/mmr</code></a> - <a href="#rank-endpoint"><code>/rank</code></a>, <a href="#checkrank-endpoint"><code>/checkrank</code></a> and <a href="#leaderboard-rank-endpoint"><code>/leaderboard-rank</code></a> endpoints</li>
+<li><a href="https://docs.henrikdev.xyz/valorant/api-reference/leaderboard#valorant-v3-leaderboard-region-platform" target="_blank"><code>https://api.henrikdev.xyz/valorant/v3/leaderboard</code></a> - <a href="#leaderboard-rank-endpoint"><code>/leaderboard-rank</code></a> endpoint</li>
+</ul>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 3, 2024</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 3, 2024</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m7 0c0 .8-.7 1.5-1.5 1.5S14 10.3 14 9.5 14.7 8 15.5 8s1.5.7 1.5 1.5m-5 7.73c-1.75 0-3.29-.73-4.19-1.81L9.23 14c.45.72 1.52 1.23 2.77 1.23s2.32-.51 2.77-1.23l1.42 1.42c-.9 1.08-2.44 1.81-4.19 1.81"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="-1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10m-6.5-4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m2 4.5c1.75 0 3.29.72 4.19 1.81l-1.42 1.42C14.32 16.5 13.25 16 12 16s-2.32.5-2.77 1.23l-1.42-1.42C8.71 14.72 10.25 14 12 14"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="-1" hidden>
+              
+              
+                
+              
+              Thanks for your feedback! Help us improve this page by <a href="https://forms.gle/BnVXpbayCQfZHmHaA" target="_blank" rel="noopener">telling us what you're missing</a>.    
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../overview/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Overview
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../stats/" class="md-footer__link md-footer__link--next" aria-label="Next: Stats Related">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Stats Related
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://discord.com/users/363436497560666114" target="_blank" rel="noopener" title="Axel on Discord (if you have a common server)" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485 485 0 0 0 404.081 32.03a1.82 1.82 0 0 0-1.923.91 338 338 0 0 0-14.9 30.6 447.9 447.9 0 0 0-134.426 0 310 310 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.7 483.7 0 0 0-119.688 37.107 1.7 1.7 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.02 2.02 0 0 0 .765 1.375 487.7 487.7 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348 348 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321 321 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251 251 0 0 0 9.109-7.137 1.82 1.82 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.81 1.81 0 0 1 1.924.233 235 235 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.4 301.4 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391 391 0 0 0 30.014 48.815 1.86 1.86 0 0 0 2.063.7A486 486 0 0 0 610.7 405.729a1.88 1.88 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541M222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241m195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://twitch.tv/ssAxel_" target="_blank" rel="noopener" title="Axel on Twitch" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M391.17 103.47h-38.63v109.7h38.63ZM285 103h-38.63v109.75H285ZM120.83 0 24.31 91.42v329.16h115.83V512l96.53-91.42h77.25L487.69 256V0Zm328.24 237.75-77.22 73.12h-77.24l-67.6 64v-64h-86.87V36.58h308.93Z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://steamcommunity.com/profiles/76561199101032196/" target="_blank" rel="noopener" title="Axel on Steam" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M496 256c0 137-111.2 248-248.4 248-113.8 0-209.6-76.3-239-180.4l95.2 39.3c6.4 32.1 34.9 56.4 68.9 56.4 39.2 0 71.9-32.4 70.2-73.5l84.5-60.2c52.1 1.3 95.8-40.9 95.8-93.5 0-51.6-42-93.5-93.7-93.5s-93.7 42-93.7 93.5v1.2L176.6 279c-15.5-.9-30.7 3.4-43.5 12.1L0 236.1C10.2 108.4 117.1 8 247.6 8 384.8 8 496 119 496 256M155.7 384.3l-30.5-12.6a52.8 52.8 0 0 0 27.2 25.8c26.9 11.2 57.8-1.6 69-28.4 5.4-13 5.5-27.3.1-40.3S206 305.6 193 300.2c-12.9-5.4-26.7-5.2-38.9-.6l31.5 13c19.8 8.2 29.2 30.9 20.9 50.7-8.3 19.9-31 29.2-50.8 21m173.8-129.9c-34.4 0-62.4-28-62.4-62.3s28-62.3 62.4-62.3 62.4 28 62.4 62.3-27.9 62.3-62.4 62.3m.1-15.6c25.9 0 46.9-21 46.9-46.8 0-25.9-21-46.8-46.9-46.8s-46.9 21-46.9 46.8c.1 25.8 21.1 46.8 46.9 46.8"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+      <button type="reset" class="md-button md-button--primary">Reject</button>
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.instant", "navigation.instant.progress", "navigation.instant.prefetch", "navigation.top", "navigation.footer", "content.code.copy", "content.code.select", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.525ec568.min.js"></script>
+      
+    
+  </body>
+</html>
