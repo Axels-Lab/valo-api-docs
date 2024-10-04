@@ -57,6 +57,7 @@ To add the LeaderboardRank-Record overlay to your stream, follow these steps:
 ### Additional Notes
 
 - The LeaderboardRank-Record overlay is designed to display the player's current rank, leaderboard rank with number of wins per total games for the current act and MMR history during the stream. It calculates wins, losses, draws, and RR (Rank Rating) changes based on the stream's start time.
+- It also displays the player's mmr change in the last 5 matches at the bottom of the overlay.
 - If the player's rank, leaderboard rank or record is not available, the overlay will display a message indicating that the data is not available.
 - If the player's rr change is negative, it will be displayed in <span style= "color:tomato">red</span> to indicate a decrease in RR. Similarly, if the rr change is positive, it will be displayed in <span style="color:lightgreen">green</span> to indicate an increase in RR.
 - The overlay is updated in real-time as the stream progresses, providing viewers with up-to-date information on the player's rank, leaderboard rank and performance. It may take a minute or two for the overlay to reflect changes after a match has ended.
