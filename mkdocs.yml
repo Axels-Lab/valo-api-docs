@@ -102,4 +102,5 @@ nav:
       - Stats Related: api-reference/stats.md
       - Record Related: api-reference/record.md
     - Overlay Endpoints:
-      - Rank-Record Overlay: overlay-reference/rank-record.md
+      - Rank-Record: overlay-reference/rank-record.md
+      - LeaderboardRank-Record: overlay-reference/leaderboardrank-record.md
