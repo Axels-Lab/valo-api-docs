@@ -1285,10 +1285,10 @@
 
 
 <h1 id="rank-related-api-endpoints">Rank Related API Endpoints</h1>
-<p>This section provides detailed information about the <code>/rank</code>, <code>/checkrank</code> and <code>leaderboard-rank</code> endpoints, which are used to retrieve the current rank, ranking points and leaderboard rank (if applicable) of a specified Valorant player.</p>
+<p>This section provides detailed information about the <code>/rank</code>, <code>/checkrank</code> and <code>leaderboard-rank</code> endpoints, which are used to retrieve the current rank, rank rating (RR) and leaderboard rank (if applicable) of a specified Valorant player.</p>
 <h2 id="rank-endpoint"><code>/rank</code> Endpoint</h2>
 <h3 id="description">Description</h3>
-<p>The <code>/rank</code> endpoint provides the current rank and ranking points of a specified Valorant player. The API fetches the player's rank and tier details based on their username, tag, and region.</p>
+<p>The <code>/rank</code> endpoint provides the current rank and rank rating (RR) of a specified Valorant player. The API fetches the player's rank and tier details based on their username, tag, and region.</p>
 <h3 id="http-method">HTTP Method</h3>
 <p><code>GET</code></p>
 <h3 id="endpoint">Endpoint</h3>
@@ -1334,7 +1334,7 @@
 <ul>
 <li>
 <p><strong>200 OK</strong><br />
-  Returns a plain text summary of the player's current rank and ranking points.</p>
+  Returns a plain text summary of the player's current rank and rank rating (RR).</p>
 <p><strong>Example Success Response:</strong> <code>Current Rank: Immortal1 - 45 RR.</code></p>
 </li>
 <li>
@@ -1448,23 +1448,23 @@
 </ul>
 <h3 id="response_1">Response</h3>
 <ul>
-<li><strong>200 OK</strong><br />
-  Returns a plain text summary of the player's current and peak rank.</li>
-</ul>
+<li>
+<p><strong>200 OK</strong><br />
+  Returns a plain text summary of the player's current and peak rank.</p>
 <p><strong>Example Success Response:</strong>
-  Current Rank: Platinum2 - 0 RR. Peak Rank: Platinum3 in e8a3 (Peak might be incorrect)</p>
-<ul>
+Current Rank: Platinum2 - 0 RR. Peak Rank: Platinum3 in e8a3 (Peak might be incorrect)</p>
+</li>
 <li>
 <p><strong>400 Bad Request</strong><br />
   Returns a plain text error message if the required parameters (<code>username</code>, <code>tag</code>, and <code>region</code>) are missing or invalid.</p>
 <p><strong>Example Error Response:</strong>
-  Error: Missing or invalid parameters. Ensure username, tag, and region are provided.</p>
+Error: Missing or invalid parameters. Ensure username, tag, and region are provided.</p>
 </li>
 <li>
 <p><strong>500 Internal Server Error</strong><br />
   Returns a plain text error message if there is an issue with fetching the data from the external API or any other error occurs.</p>
 <p><strong>Example Error Response:</strong>
-  Error occurred: <Error Message></p>
+Error occurred: <Error Message></p>
 </li>
 </ul>
 <h3 id="example-request">Example Request</h3>
@@ -1573,24 +1573,23 @@
 </span></code></pre></div>
 <h3 id="response_2">Response</h3>
 <ul>
-<li><strong>200 OK</strong><br />
-  Returns a plain text summary of the player's current rank, leaderboard rank, and win rate.</li>
-</ul>
+<li>
+<p><strong>200 OK</strong><br />
+  Returns a plain text summary of the player's current rank, leaderboard rank, and win rate.</p>
 <p><strong>Example Success Response:</strong>
-  Current Rank: Immortal3 - 392 RR | Leaderboard Rank: 502 with 71 wins out of 151 games (47.02% wr)</p>
-<ul>
+Current Rank: Immortal3 - 392 RR | Leaderboard Rank: 502 with 71 wins out of 151 games (47.02% wr)</p>
+</li>
 <li>
 <p><strong>400 Bad Request</strong>
   Returns a plain text error message if required parameters (<code>name</code>, <code>tag</code>, <code>region</code>) are missing.</p>
-<div class="language-text highlight"><pre><span></span><code>**Example Error Response:**
-`Error: Missing parameters. Ensure username, tag, and region are provided.`
-</code></pre></div>
+<p><strong>Example Error Response:</strong>
+<code>Error: Missing parameters. Ensure username, tag, and region are provided.</code></p>
 </li>
 <li>
 <p><strong>500 Internal Server Error</strong><br />
-   Returns a plain text error message if an error occurs while fetching data from the external API (e.g., invalid credentials, player not found, etc.).
-  <strong>Example Error Response:</strong>
-  <code>Error Message from API</code></p>
+   Returns a plain text error message if an error occurs while fetching data from the external API (e.g., invalid credentials, player not found, etc.).</p>
+<p><strong>Example Error Response:</strong>
+<code>Error Message from API</code></p>
 </li>
 </ul>
 <h3 id="command-setup_2">Command Setup</h3>
@@ -1677,7 +1676,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 30, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 13, 2024</span>
   </span>
 
     
