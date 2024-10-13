@@ -1,12 +1,12 @@
 # Rank Related API Endpoints
 
-This section provides detailed information about the `/rank`, `/checkrank` and `leaderboard-rank` endpoints, which are used to retrieve the current rank, ranking points and leaderboard rank (if applicable) of a specified Valorant player.
+This section provides detailed information about the `/rank`, `/checkrank` and `leaderboard-rank` endpoints, which are used to retrieve the current rank, rank rating (RR) and leaderboard rank (if applicable) of a specified Valorant player.
 
 ## `/rank` Endpoint
 
 ### Description
 
-The `/rank` endpoint provides the current rank and ranking points of a specified Valorant player. The API fetches the player's rank and tier details based on their username, tag, and region.
+The `/rank` endpoint provides the current rank and rank rating (RR) of a specified Valorant player. The API fetches the player's rank and tier details based on their username, tag, and region.
 
 ### HTTP Method
 
@@ -28,7 +28,7 @@ The `/rank` endpoint provides the current rank and ranking points of a specified
 ### Response
 
 - **200 OK**  
-  Returns a plain text summary of the player's current rank and ranking points.
+  Returns a plain text summary of the player's current rank and rank rating (RR).
 
       **Example Success Response:** `Current Rank: Immortal1 - 45 RR.`
 
@@ -153,20 +153,20 @@ This `q` value will be split as:
 - **200 OK**  
   Returns a plain text summary of the player's current and peak rank.
 
-  **Example Success Response:**
-  Current Rank: Platinum2 - 0 RR. Peak Rank: Platinum3 in e8a3 (Peak might be incorrect)
+    **Example Success Response:**
+    Current Rank: Platinum2 - 0 RR. Peak Rank: Platinum3 in e8a3 (Peak might be incorrect)
 
 - **400 Bad Request**  
   Returns a plain text error message if the required parameters (`username`, `tag`, and `region`) are missing or invalid.
 
-      **Example Error Response:**
-      Error: Missing or invalid parameters. Ensure username, tag, and region are provided.
+    **Example Error Response:**
+    Error: Missing or invalid parameters. Ensure username, tag, and region are provided.
 
 - **500 Internal Server Error**  
   Returns a plain text error message if there is an issue with fetching the data from the external API or any other error occurs.
 
-      **Example Error Response:**
-      Error occurred: <Error Message>
+    **Example Error Response:**
+    Error occurred: <Error Message>
 
 ### Example Request
 
@@ -278,19 +278,20 @@ GET /leaderboard-rank?name=PlayerName&tag=1234&region=na&apiKey=HDEV-xxxxxxxx-xx
 - **200 OK**  
   Returns a plain text summary of the player's current rank, leaderboard rank, and win rate.
 
-  **Example Success Response:**
-  Current Rank: Immortal3 - 392 RR | Leaderboard Rank: 502 with 71 wins out of 151 games (47.02% wr)
+    **Example Success Response:**
+    Current Rank: Immortal3 - 392 RR | Leaderboard Rank: 502 with 71 wins out of 151 games (47.02% wr)
 
 - **400 Bad Request**
   Returns a plain text error message if required parameters (`name`, `tag`, `region`) are missing.
 
-        **Example Error Response:**
-        `Error: Missing parameters. Ensure username, tag, and region are provided.`
+    **Example Error Response:**
+    `Error: Missing parameters. Ensure username, tag, and region are provided.`
 
 - **500 Internal Server Error**  
    Returns a plain text error message if an error occurs while fetching data from the external API (e.g., invalid credentials, player not found, etc.).
-  **Example Error Response:**
-  `Error Message from API`
+
+    **Example Error Response:**
+    `Error Message from API`
 
 ### Command Setup
 
