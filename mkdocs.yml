@@ -1,5 +1,6 @@
 site_name: Valo-Api Docs
 
+
 markdown_extensions:
   - attr_list
   - pymdownx.highlight:
@@ -59,6 +60,7 @@ extra:
             <a href="https://forms.gle/BnVXpbayCQfZHmHaA" target="_blank" rel="noopener">telling us what you're missing</a>.    
 
 theme:
+  logo: assets/images/logo.png
   name: material
   favicon: assets/images/favicon.png
   features:
