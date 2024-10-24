@@ -14,13 +14,13 @@ https://valo-api.vercel.app
 
 The Valo-API provides the following endpoints:
 
-- `/rank`
-- `/checkrank`
-- `/leaderboard-rank`
-- `/stats`
-- `/checkstats`
-- `/record`
-- `/last-match/party-members`
+- [`/rank`](./rank.md/#rank-endpoint)
+- [`/checkrank`](./rank.md/#checkrank-endpoint)
+- [`/leaderboard-rank`](./rank.md/#leaderboard-rank-endpoint)
+- [`/stats`](./stats.md/#stats-endpoint)
+- [`/checkstats`](./stats.md/#checkstats-endpoint)
+- [`/record`](./record.md/#record-endpoint)
+- [`/last-match/party-members`](./stats.md/#party-members-endpoint)
 
 ## Request Parameters
 
