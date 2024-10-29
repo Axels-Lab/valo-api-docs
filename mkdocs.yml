@@ -1,6 +1,5 @@
 site_name: Valo-Api Docs
 
-
 markdown_extensions:
   - attr_list
   - pymdownx.highlight:
@@ -19,6 +18,12 @@ plugins:
       enable_creation_date: true
       locale: en
       
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/scripts/extra.js
+
 extra:
   social:
     - icon: fontawesome/brands/discord
