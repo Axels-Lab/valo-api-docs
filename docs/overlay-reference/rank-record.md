@@ -1,5 +1,11 @@
 # Rank-Record Overlay
 
+## [Base URL](./overview.md/#base-url)
+
+```plaintext
+https://valo-api.vercel.app
+```
+
 ## `/overlays/rank-record` Endpoint
 
 ### Description

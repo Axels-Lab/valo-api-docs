@@ -66,6 +66,7 @@ extra:
 
 theme:
   logo: assets/images/logo.png
+  custom_dir: docs/overrides
   name: material
   favicon: assets/images/favicon.png
   features:

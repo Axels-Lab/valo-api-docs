@@ -1,5 +1,11 @@
 # LeadeboardRank-Record Overlay
 
+## [Base URL](./overview.md/#base-url)
+
+```plaintext
+https://valo-api.vercel.app
+```
+
 ## `/overlays/leaderboardrank-record` Endpoint
 
 ### Description

@@ -1,6 +1,16 @@
+---
+toc_depth: 3
+---
+
 # Rank Related API Endpoints
 
 This section provides detailed information about the `/rank`, `/checkrank` and `leaderboard-rank` endpoints, which are used to retrieve the current rank, rank rating (RR) and leaderboard rank (if applicable) of a specified Valorant player.
+
+## [Base URL](./overview.md/#base-url)
+
+```plaintext
+https://valo-api.vercel.app
+```
 
 ## `/rank` Endpoint
 

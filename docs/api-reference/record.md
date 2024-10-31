@@ -1,5 +1,11 @@
 # Record Related API Endpoints
 
+## [Base URL](./overview.md/#base-url)
+
+```plaintext
+https://valo-api.vercel.app
+```
+
 ## `/record` Endpoint
 
 ### Description

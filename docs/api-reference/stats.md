@@ -1,6 +1,16 @@
+---
+toc_depth: 3
+---
+
 # Stats Related API Endpoints
 
 This section provides detailed information about the `/stats`, `/checkstats` and `/party-members` endpoints, which are used to retrieve player statistics and party members of a specified Valorant player.
+
+## [Base URL](./overview.md/#base-url)
+
+```plaintext
+https://valo-api.vercel.app
+```
 
 ## `/stats` Endpoint
 
@@ -35,45 +45,32 @@ GET /stats?username=playername&tag=1234&region=na&apiKey=yourapikey
 
 ### Response
 
-- **200 OK**
+#### **200 OK**
 
-  Returns a summary of the player's stats for the last match and an aggregate summary of their last available matches.
+- Returns a summary of the player's stats for the last match and an aggregate summary of their last available matches. Check out the [Stats Fields Explanation](#stats-fields-explanation) section for details on the fields for a successful response.
 
-      **Example Success Response:**
-      ```plaintext
-      Last Match Stats: Agent – Jett | K/D/A – 20/10/5 | ACS – 250 | ADR – 150 | DDΔ – 100 | HS% – 25.00% | Combined Stats (Last 5 Matches): K/D/A – 100/50/25 | ACS – 245 | ADR – 148 | DDΔ – 90 | HS% – 24.50%
-      ```
+- **Example Success Response:**
+```plaintext
+Last Match Stats: Agent – Jett | K/D/A – 20/10/5 | ACS – 250 | ADR – 150 | DDΔ – 100 | HS% – 25.00% | Combined Stats (Last 5 Matches): K/D/A – 100/50/25 | ACS – 245 | ADR – 148 | DDΔ – 90 | HS% – 24.50%
+```
 
-      **Explanation of the Fields:**
+#### **400 Bad Request**
 
-          - Last Match Stats:
-              - Agent: The agent the player used in the last match.
-              - K/D/A: The player's kills, deaths, and assists in the last match.
-              - ACS: Average combat score for the player in the last match.
-              - ADR: Average damage per round in the last match.
-              - DDΔ (Damage Delta): Difference between damage made and damage received per round.
-              - HS%: Headshot percentage for the last match.
-          - Combined Stats:
-              - Shows aggregated statistics across all available matches.
-              - K/D/A: Combined kills, deaths, and assists from the last available matches.
-              - ACS: Average combat score across the last available matches.
-              - ADR: Average damage per round across all matches.
-              - DDΔ (Damage Delta): Combined damage delta across all matches.
-              - HS%: Average headshot percentage across all matches.
+- Returns an error if required parameters (username, tag, or region) are missing or invalid.
 
-- **400 Bad Request**
+- **Example Error Response:**
+    ```plaintext
+    Error: Missing parameters. Ensure username, tag, and region are provided.
+    ```
 
-  Returns an error if required parameters (username, tag, or region) are missing or invalid.
+#### **500 Internal Server Error**
 
-  **Example Error Response:**
-  Error: Missing parameters. Ensure username, tag, and region are provided.
+- Returns an error if there is an issue fetching or parsing the match data.
 
-- **500 Internal Server Error**
-
-  Returns an error if there is an issue fetching or parsing the match data.
-
-  **Example Error Response:**
-  Failed to parse match stats: `<Error Message from API>`
+- **Example Error Response:**
+    ```plaintext
+    Failed to parse match stats: `<Error Message from API>`
+    ```
 
 ### Command Setup
 
@@ -180,39 +177,39 @@ This `q` value will be split as:
 
 ### Response
 
-- **200 OK**
+#### **200 OK**
 
-  Returns a summary of the player's stats for the last match and an aggregate summary of their last available matches.
+  - Returns a summary of the player's stats for the last match and an aggregate summary of their last available matches. Check out the [Stats Fields Explanation](#stats-fields-explanation) section for details on the fields for a successful response.
 
   - If valid data is found, the response will include:
     - The last match stats of the player.
     - A summary of combined stats for all available matches.
 
-  Response Example:
+  - Response Example:
 
-  ```plaintext
-  Last Match Stats: Agent – Jett | K/D/A – 20/10/5 | ACS – 245 | ADR – 145 | DDΔ – 15 | HS% – 22.45% || Combined Stats (Last 5 Matches): K/D/A – 80/50/20 | ACS – 230 | ADR – 140 | DDΔ – 10 | HS% – 21.34%
-  ```
+    ```plaintext
+    Last Match Stats: Agent – Jett | K/D/A – 20/10/5 | ACS – 245 | ADR – 145 | DDΔ – 15 | HS% – 22.45% || Combined Stats (Last 5 Matches): K/D/A – 80/50/20 | ACS – 230 | ADR – 140 | DDΔ – 10 | HS% – 21.34%
+    ```
 
-- **400 Bad Request**
+#### **400 Bad Request**
 
-  Returns an error if required parameters are missing or invalid.
+- Returns an error if required parameters are missing or invalid.
 
-  Error Response Example:
+- Error Response Example:
 
-  ```plaintext
-  Error: Missing or invalid parameters. Ensure username, tag, and region are provided.
-  ```
+    ```plaintext
+    Error: Missing or invalid parameters. Ensure username, tag, and region are provided.
+    ```
 
-- **500 Internal Server Error**
+#### **500 Internal Server Error**
 
-  Returns an error if there is an issue fetching or parsing the match data.
+  - Returns an error if there is an issue fetching or parsing the match data.
 
-  Error Response Example:
+  - Error Response Example:
 
-  ```plaintext
-  Failed to parse match stats: <Error Message from API>
-  ```
+    ```plaintext
+    Failed to parse match stats: <Error Message from API>
+    ```
 
 ### Command Setup
 
@@ -311,30 +308,31 @@ GET /party-members?username=playername&tag=1234&region=na&apiKey=HDEV-xxxxxxxx-x
 
 ### Response
 
-- **200 OK**
+#### **200 OK**
 
-  Returns a list of the player's party members in the last match.
-
-      **Example Success Response:**
+  - Returns a list of the player's party members in the last match.
+  - **Example Success Response:**
       ```plaintext
       Party Members: Player1, Player2, Player3
       // If the player was solo in the last match:
       No party members found
       ```
 
-- **400 Bad Request**
+#### **400 Bad Request**
 
-  Returns an error if required parameters (username, tag, or region) are missing or invalid.
-
-        **Example Error Response:**
+  - Returns an error if required parameters (username, tag, or region) are missing or invalid.
+  - **Example Error Response:**
+        ```plaintext
         Error: Missing parameters. Ensure username, tag, and region are provided.
+        ```
 
-- **500 Internal Server Error**
+#### **500 Internal Server Error**
 
-  Returns an error if there is an issue fetching or parsing the match data.
-
-        **Example Error Response:**
+  - Returns an error if there is an issue fetching or parsing the match data.
+  - **Example Error Response:**
+        ```plaintext
         Failed to parse party members: `<Error Message from API>`
+        ```
 
 ### Command Setup
 
@@ -401,6 +399,17 @@ To use the `!party` command in your chatbot for the configured user, you can typ
 ```
 
 ---
+
+## Stats Fields Explanation
+
+- **Agent:** The agent the player used in the last match.
+- **K/D/A:** The player's kills, deaths, and assists in the last match.
+- **ACS:** Average combat score for the player in the last match.
+- **ADR:** Average damage per round in the last match.
+- **DDΔ (Damage Delta):** Difference between damage made and damage received per round.
+- **HS%:** Headshot percentage for the last match.
+- **Last Match Stats:** Summary of the player's stats for the last match.
+- **Combined Stats (Last 5 Matches):** Aggregated statistics across last 5 matches.
 
 ## Additional Notes
 
