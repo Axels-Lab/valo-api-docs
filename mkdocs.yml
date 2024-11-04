@@ -1,4 +1,5 @@
 site_name: Valo-Api Docs
+site_url: https://axels-lab.github.io/valo-api-docs/
 
 markdown_extensions:
   - attr_list
