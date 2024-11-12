@@ -90,7 +90,7 @@ theme:
       primary: red
       accent: indigo
       toggle:
-        icon: material/toggle-switch
+        icon: material/weather-night
         name: Switch to dark mode
 
     # Palette toggle for dark mode
@@ -99,7 +99,7 @@ theme:
       primary: red
       accent: indigo
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/weather-sunny
         name: Switch to light mode
 
 nav:
